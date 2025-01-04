@@ -1,5 +1,7 @@
 # Object Telecloning
 
+![Object Cloning](Cloned.png)
+
 ## Overview
 
 Object Telecloning is an application that uses OpenCV and MediaPipe to detect and replicate objects in a virtual environment. This project demonstrates a practical use case of computer vision and machine learning for creating interactive experiences.
