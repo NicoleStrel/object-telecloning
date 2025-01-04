@@ -44,11 +44,11 @@ def main():
 
                 # Detect object within hand
                 frame = utils.detect_object_within_hand(frame, hand_bbox, idx, objects_in_hands)
-
-                # Detect or transfer objects
-                if len(hand_dict) == 2 and blink_transfer:
+            
+            if len(hand_dict) == 2 and blink_transfer:
+                for idx, hand_landmarks in enumerate(hand_results.multi_hand_landmarks):
+                    # Detect or transfer objects
                     frame = utils.transfer_object_between_hands(frame, hand_dict, idx, objects_in_hands)
-                    
 
         # Process frame for face
         face_results = face_mesh.process(rgb_frame)
@@ -69,7 +69,7 @@ def main():
                         blink_transfer = not blink_transfer
                     blink_counter = 0
 
-        cv2.imshow("Object Teleporter", frame)
+        cv2.imshow("Object Telecloning", frame)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 
