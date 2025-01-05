@@ -4,14 +4,14 @@
 
 ## Overview
 
-Object Telecloning is an application that uses OpenCV and MediaPipe to detect and replicate objects in a virtual environment. This project demonstrates a practical use case of computer vision and machine learning for creating interactive experiences.
+This project uses OpenCV and MediaPipe to detect and replicate objects in a virtual environment. It demonstrates a practical use case of computer vision and machine learning for creating interactive experiences.
 
 ## How It Works
 
 1. **Hand and Face Detection**: MediaPipe is used to detect hands and facial landmarks in real-time.
 2. **Data Processing**: Extracts key features from detected hands, faces, and objects within the hands.
 3. **Virtual Cloning**: OpenCV is used to draw and replicate held objects based on the detected features.
-4. **Interaction**: Allows users to interact with virtual clones in real-time by blinking to clone and transfer (teleport) objects from one hand to another.
+4. **Interaction**: Allows users to interact with virtual object clones in real-time by blinking to clone and transfer (teleport) objects from one hand to another.
 
 ## Installation
 
@@ -39,7 +39,7 @@ Object Telecloning is an application that uses OpenCV and MediaPipe to detect an
 
 ## Demo Video
 
-[![Demo Video](https://img.youtube.com/vi/your-video-id/0.jpg)](https://www.youtube.com/watch?v=your-video-id)
+[Demo Video](https://youtu.be/RsZ-SOa-P1A)
 
 ## License
 
